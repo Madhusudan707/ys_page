@@ -6,10 +6,18 @@ body,
 html {
     margin: 0;
     padding: 0;
-    display: none;
+  
 }
 a{
     text-decoration: none;
+}
+@media only screen and (min-width: 480px) {
+    body,
+html {
+    display:none
+  
+}
+   
 }
 
 @media only screen and (max-width:480px) {
@@ -30,6 +38,7 @@ a{
             "store-offers-card"
             "store-rating-review"
             "direction";
+          
     }
 
     .header {
@@ -39,6 +48,7 @@ a{
         align-items: center;
         padding-top: 0.5rem;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      
     }
 
     .sidenav>img {
@@ -65,10 +75,11 @@ a{
     .image-slider {
         grid-area: image-slider;
         position:relative;
+        max-width: 100%;
     }
 
     .banner_img{
-        width: 100%;
+        max-width: 100%;
     }
 
     .image-slider>.plan-type {
@@ -113,13 +124,17 @@ a{
     justify-content: center;
     align-self:center; */
     /* justify-self: center; */
-    
    
+    
+    
 }
 
 .store-nav>ul{
     list-style:none;
     padding:1rem;
+   
+    
+    
     
    
 }
@@ -130,7 +145,8 @@ a{
     
 }
 .store-nav>ul>li>a{
-    font-size:1.3rem;
+   
+    font-size:1.1rem;
     color:#1e88e5 ;
    
 }
@@ -206,9 +222,11 @@ a{
 .store-rating-review{
     grid-area:store-rating-review;
     margin-left:1rem;
+  
 }
 
 .store-rating-review>button{
+    
     padding:1.5rem;
     font-size:1.2rem;
     color:#326ec9;
