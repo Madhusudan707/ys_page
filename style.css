@@ -1,0 +1,230 @@
+.hide {
+    display: none;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width:480px) {
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "image-slider"
+            "store-info"
+            "store-nav"
+            "store-offers-card"
+            "store-rating-review"
+            "direction";
+    }
+
+    .header {
+        display: grid;
+        grid-area: header;
+        grid-template-columns: 30px 250px 20px;
+        align-items: center;
+        padding-top: 0.5rem;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .sidenav>img {
+        width: 30px;
+        margin-left: 0.5rem;
+    }
+
+    .brand-icon>img {
+        width: 140px;
+        margin-left: 1.5rem;
+
+    }
+
+    .share-icon {
+        width: 80px;
+        float: right;
+    }
+
+    .share-icon>img {
+        width: 30px;
+        float: right;
+    }
+
+    .image-slider {
+        grid-area: image-slider;
+        position:relative;
+    }
+
+    .banner_img{
+        width: 100%;
+    }
+
+    .image-slider>.plan-type {
+        position: absolute;
+        left: 2%;
+        top: 10%;
+        padding: 0.5rem;
+        background-color: lightgrey;
+        color: white;
+        border-radius: 0.5rem;
+        font-weight: bold;
+
+    }
+.store-info{
+    display:grid;
+    grid-area:store-info;
+    grid-template-areas: 
+    "info-header"
+    "info-details";
+    margin-left:1rem;
+}
+.info-header{
+    display:grid;
+    grid-area:info-header;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+.info-header>p{
+   color:#1e88e5 ;
+  
+}
+.info-details{
+    grid-area:info-details;
+    font-size:1.2rem;
+}
+.store-nav{
+    grid-area:store-nav;
+  
+    /* border:2px solid red; */
+    /* justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-self:center; */
+    /* justify-self: center; */
+    
+   
+}
+
+.store-nav>ul{
+    list-style:none;
+    padding:1rem;
+    
+   
+}
+.store-nav>ul>li{
+    display:inline;
+    padding-right:0.2rem;
+    text-align: center;
+    
+}
+.store-nav>ul>li>a{
+    font-size:1.3rem;
+    color:#1e88e5 ;
+   
+}
+
+
+.store-offers-card{
+  
+   display:grid;
+   grid-area:store-offers-card;
+   grid-template-rows: auto;
+   /* grid-template-areas: 
+   "offer-card-limited"
+   "offer-card-regular"; */
+    justify-content:center;
+    padding:1rem;
+}
+
+.offer-card-limited{
+    display:grid;
+    /* grid-area:offers-card-limited; */
+    grid-template-areas: "offer-img-block  offer-content offer-content offer-content";
+    margin-bottom:2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.offer-img-block{
+    grid-area:offer-img-block;
+    padding:1rem 1rem 0.5rem 1rem;
+   /* justify-content: center; */
+   
+}
+
+.offer-img-block>img{
+    width:80px;
+    border-radius:50%;
+}
+.offer-content{
+    padding:0.6rem 0.8rem 0 0.8rem;
+    grid-area:offer-content;
+    line-height: 0.5;
+}
+.offer-content>p{
+    color:red;
+}
+.offer-content>span{
+    font-size:0.8rem;
+    color:lightgrey;
+}
+
+.offer-card-regular{
+    display:grid;
+    grid-template-areas:
+    "regular-info regular-info regular-img-block";
+    /* grid-area:offer-card-regular; */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius:0.5rem;
+    background-color:#326ec9
+}
+
+.regular-info{
+    padding:0 0.8rem 0 1.5rem;
+    grid-area:regular-info;
+    line-height: 1.2;
+    color:white;
+}
+.regular-img-block{
+    grid-area:regular-img-block;
+    padding:2rem 1rem 0.5rem 1rem;
+}
+.regular-img-block>img{
+    width:100px;
+}
+
+.store-rating-review{
+    grid-area:store-rating-review;
+    margin-left:1rem;
+}
+
+.store-rating-review>button{
+    padding:1.5rem;
+    font-size:1.2rem;
+    color:#326ec9;
+    border:2px solid #326ec9; 
+    background:none;
+    outline:none;
+    border-radius:0.5rem;
+}
+.direction{
+    grid-area:direction;
+   
+}
+.direction>h1{
+    margin-left:1rem;
+}
+.direction>img{
+    width:100%;
+}
+
+}
