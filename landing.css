@@ -40,6 +40,7 @@ html {
             "yosd"
             "live-offers";
             grid-row-gap:0.5rem;
+            overflow: hidden;
     }
 
     .header {
