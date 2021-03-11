@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@200&display=swap');
+
+.hide {
+    display: none;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+  
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (min-width: 480px) {
+    body,
+html {
+    display:none
+  
+}
+   
+}
+
+@media only screen and (max-width:414px) {
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "banner"
+            "search"
+            "yosd"
+            "live-offers";
+            grid-row-gap:0.5rem;
+    }
+
+    .header {
+        display: grid;
+        grid-area: header;
+        grid-template-columns: 30px 270px 80px;
+        align-items: center;
+        padding: 1.2rem;
+        /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+     
+    }
+
+    .sidenav>img {
+        width: 18px;
+        margin-left: 0.5rem;
+        /* position: absolute;
+        left: 5.8%;
+        right: 89.86%;
+        top: 1.39%;
+        bottom: 98.24%; */
+    }
+
+    .brand-icon>img {
+        width:105px;
+        margin-left: 0.5rem;
+        position: absolute;
+        top: 2.5%;
+        /* position: absolute;
+        left: 14.25%;
+        right: 60.3%;
+        top: 1.57%;
+        bottom: 97.2%; */
+    }
+
+    .sign-in {
+
+        /* max-width: 100%; */
+        /* float: right; */
+    }
+    .sign-in>a{
+       /* float:right; */
+        /* width: 61px; */
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: #1B7EBC;
+    }
+
+    .banner{
+        grid-area:banner;
+        background: linear-gradient(180deg, #445DE2 0%, rgba(27, 48, 159, 0.94) 100%);
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        padding-bottom: 2rem;
+
+
+    }
+    .banner>h1{
+       padding-left:5%;
+        color:#f9f9f9;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Alice', serif;
+        font-weight: normal;
+        font-size: 36px;
+    }
+
+    .banner>span{
+        color:#ffffff;
+        padding-left:8%;
+        font-family: 'Alice', serif;
+    }
+
+    .search{
+        grid-area:search;
+        max-width: 100%;
+        /* align-items: center; */
+        /* justify-content:center; */
+        /* justify-items: center; */
+        /* justify-self: center; */
+        margin-top:4%;
+        margin-left:8%;
+       
+
+    }
+    .search>label{
+        
+    }
+    .search>label>input::placeholder{
+        font-size:16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+    }
+    .search>label>input{
+        width: 100%;
+        padding: 10px 30px;
+       
+        outline:none;
+        border:0px;
+    }
+
+    .search>label{
+        position: relative;
+    }
+    .search>label:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        width: 16px;
+        background: url("./images/search_icon.svg") center / contain no-repeat;
+      }
+
+    .yosd{
+        grid-area:yosd;
+        grid-template-areas:
+        "heading"
+        "yosd-slider" ;
+        margin-left:5%;
+
+    }
+
+    .heading{
+        grid-area:heading;
+    }
+
+
+    .yosd>.heading>h3{
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .yosd-slider{
+        grid-area:yosd-slider;
+      
+    }
+    .offer-card-regular>.img-block{
+        position:relative;
+    }
+    .offer-card-regular>.img-block>.plan-name {
+        position: absolute;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size:12px;
+        left: 0;
+        top: 10%;
+        padding: 0.5rem;
+        background-color: #7F7F7F;;
+        color: white;
+        border-radius: 0px 4px 4px 0px;
+        font-weight: bold;
+
+    }
+
+    .live-offers{
+        grid-area:live-offers;
+        grid-template-areas: "offer-card-regular"
+        "offer-card-limited";
+        margin-left:5%;
+        
+    }
+
+    .offer-card-regular{
+        grid-area:offer-card-regular;
+       
+    }
+    .offer-card-regular>.heading>h3{
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .offer-card-regular>.img-block>.plan-type,.store-name,.store-tags{
+        line-height: 0.3;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .offer-card-limited{
+        grid-area:offer-card-limited;
+        margin-top:8%;
+    }
+
+    .offer-card-limited{
+        display:grid;
+        /* grid-area:offers-card-limited; */
+        grid-template-areas: "offer-img-block  offer-content offer-content offer-content offer-content offer-content offer-content offer-content offer-content offer-content offer-content offer-content ";
+        /* margin-bottom:2rem; */
+        /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+        /* justify-content: center;; */
+        left: 5.8%;
+        right: 5.8%;
+        top: 36.66%;
+        bottom: 58.06%;
+    }
+    .offer-img-block{
+        grid-area:offer-img-block;
+        padding:1rem 0 0.5rem 1rem;
+       /* justify-content: center; */
+       
+    }
+    
+    .offer-img-block>img{
+        width:40px;
+        border-radius:50%;
+    }
+    .offer-content{
+        /* padding:0.6rem 0.8rem 0 0.8rem; */
+        grid-area:offer-content;
+        line-height: 0.5;
+       
+    }
+    .offer-content>p{
+        color: rgba(255, 0, 0, 0.8);
+        font-family: 'Nunito', sans-serif;
+    }
+    .offer-content>span{
+        font-size:0.8rem;
+        font-family: 'Nunito', sans-serif;
+        color:#757575;
+        font-weight: 400;
+    }
+    .offer-content>h3{
+        font-family: 'Nunito', sans-serif;
+    }
+
+ 
+}
