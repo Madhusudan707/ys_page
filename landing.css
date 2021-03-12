@@ -40,13 +40,14 @@ html {
             "yosd"
             "live-offers";
             grid-row-gap:0.5rem;
-            overflow: hidden;
+            /* overflow: hidden; */
+           
     }
 
     .header {
         display: grid;
         grid-area: header;
-        grid-template-columns: 30px 270px 80px;
+        grid-template-columns: 30px 110px auto;
         align-items: center;
         padding: 1.2rem;
         /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
@@ -61,6 +62,7 @@ html {
         right: 89.86%;
         top: 1.39%;
         bottom: 98.24%; */
+        
     }
 
     .brand-icon>img {
@@ -73,15 +75,18 @@ html {
         right: 60.3%;
         top: 1.57%;
         bottom: 97.2%; */
+       
     }
 
     .sign-in {
 
         /* max-width: 100%; */
         /* float: right; */
+      
     }
     .sign-in>a{
-       /* float:right; */
+        float:right;
+        padding-right:1rem;
         /* width: 61px; */
         font-family: 'Nunito', sans-serif;
         font-weight: bold;
@@ -114,7 +119,7 @@ html {
 
     .search{
         grid-area:search;
-        max-width: 100%;
+        /* max-width: 100%; */
         /* align-items: center; */
         /* justify-content:center; */
         /* justify-items: center; */
@@ -133,7 +138,7 @@ html {
         font-weight: 400;
     }
     .search>label>input{
-        width: 100%;
+        width: 83%;
         padding: 10px 30px;
        
         outline:none;
